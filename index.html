@@ -22,7 +22,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Asul:400,700|Karla:400,400i,700" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Asul:400,700|Karla:400,400i,700" rel="stylesheet">-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Onest:wght@100..900&display=swap" rel="stylesheet">  
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </head>
@@ -44,7 +48,10 @@
 <div class="container">
     <div class="inner intro">
         <img src="img/site/avatar.png" class="avatar" alt="Avatar of Henrik">
-        <h1><strong>Hello, I’m Henrik.</strong><br>TESTProduct designer from the land of snow and blondes.</h1>
+        <div class="intro__text">
+            <h1>Hello, I’m Henrik,<br>A designer from Sweden.</h1>
+            <div class="intro__text-preamble">Here’s a selection of some of the things I’ve worked<br>on during my ~15 years in the tech business.</div>
+        </div>
     </div>
     <div class="inner__content">
         <div class="grid">
@@ -144,15 +151,28 @@
         <div class="about__section">
             <h3 class="about__headline"><strong>About</strong></h3>
             <div class="about__content">
-                I’m a 30 something from Uppsala/Stockholm, Sweden with 10+ years of experience working with web design, apps, responsive design, prototyping and interface design.<br><br>
-                I spend most of my time in tools like Sketch but have excellent HTML/CSS knowledge as well.<br><br>
-                I'm used to user-centered design and product development and have done a fair share of user testing, user research and experimenting.
+                I’m a designer from the land of snow and blondes. I built my first website in the late ‘90s as a teenager and has worked with design ever since.<br><br>
+                I thrive doing visual design but I have also done a fair share of user testing, user research and experimenting.<br><br>
+                As of late my biggest passion has been design systems.
+                For the last 3 years I’ve worked with a large multi-brand design system for some of the biggest brands in the nordics.<br><br>
+                Even though I’m mainly designing stuff nowadays I do my best keeping my coding skills up to date by working on different hobby projects.
             </div>
         </div>
         <div class="about__section">
             <h3 class="about__headline"><strong>Skills</strong></h3>
             <div class="about__content">
-                <div class="about__content-row about__content-row-first">
+                <ul class="pills">
+                    <li class="pills__pill">Visual design</li>
+                    <li class="pills__pill">UI/UX</li>
+                    <li class="pills__pill">Design systems</li>
+                    <li class="pills__pill">Design leadership</li>
+                    <li class="pills__pill">User research</li>
+                    <li class="pills__pill">Accessibility</li>
+                    <li class="pills__pill">Frontend dev</li>
+                </ul>
+            </div>
+            <div class="about__content">
+                <!--<div class="about__content-row about__content-row-first">
                     <div class="about__content-row-item">
                         <ul>
                             <li><strong>Visual design</strong>
@@ -202,12 +222,15 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
         <div class="about__section about__section-last">
-            <h3 class="about__headline"><strong>Experience</strong></h3>
+            <h3 class="about__headline"><strong>Contact</strong></h3>
             <div class="about__content">
+                Reach out on <a href="https://www.linkedin.com/in/henrik-sahlin-55b3b825/" class="contact__link" target="_blank">Linkedin</a>
+            </div>
+            <!--<div class="about__content">
                 <div class="experience__item">
                     <div class="experience__item-img">
                         <img src="img/site/cv_blocket.png" alt="Blocket logotype">
@@ -248,10 +271,11 @@
                         <p class="experience__item-text experience__item-text-last">Designer & frontend developer working on medicine and life science related products.</p>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>
+<!--
 <footer id="contact">
     <div class="inner">
         <img src="img/site/logo_dark.svg" class="footer__logo" alt="HS">
@@ -262,6 +286,7 @@
         </nav>
     </div>
 </footer>
+-->
 <script src="js/main.js"></script>
 </body>
 </html>

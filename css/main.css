@@ -13,10 +13,13 @@
    ========================================================================== */
 
    html {
-    color: #222A36;
+    color: #121418;
     font-size: 16px;
     line-height: 24px;
-    font-family: 'Karla', sans-serif;
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 /*
@@ -145,19 +148,30 @@ li {
 
 img {
     width: 100%;
-    border-radius: 2px;
+    border-radius: 4px;
     background: #F1F1F1;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-family: 'Asul', sans-serif;
-    font-weight: normal;
-    color: #222A36;
+.intro__text {
+    float: left;
+    margin-bottom: 160px;
+}
+
+.intro__text-preamble {
+    font-size: 32px;
+    line-height: 45px;
+    color: #121418;
 }
 
 h1 {
-    margin-bottom: 50px;
+    margin-bottom: 16px;
+    color: #000;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
     font-size: 24px;
     line-height: 36px;
     text-align: center;
@@ -165,23 +179,29 @@ h1 {
 
 @media screen and (min-width: 1344px) {
     h1 {
-        width: 725px;
-        margin-bottom: 200px;
+        margin: 16px 0;
         text-align: left;
-        font-size: 45px;
-        line-height: 65px;
+        font-size: 60px;
+        line-height: 70px;
     }
 }
 
+h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #121418;
+    font-weight: 700;
+}
+
 h2 {
-    font-size: 22px;
-    line-height: 33px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
 }
 
 @media screen and (min-width: 1344px) {
     h2 {
-        font-size: 34px;
-        line-height: 51px;
+        font-size: 32px;
+        line-height: 40px;
     }
 }
 
@@ -207,8 +227,8 @@ header {
 @media screen and (min-width: 1344px) {
     .avatar {
         float: left;
-        width: 129px;
-        margin: 6px 50px 0 0;
+        width: 154px;
+        margin: 6px 48px 0 0;
     }
 }
 
@@ -279,14 +299,14 @@ nav a {
     height: 44px;
     padding-bottom: 0px;
     line-height: 44px;
-    color: #657284;
+    color: #4F5967;
     text-decoration: none;
 }
 
 @media screen and (min-width: 1344px) {
     nav a:hover {
-        color: #794256;
-        border-bottom: 3px solid #794256;
+        color: #6C1515;
+        border-bottom: 3px solid #6C1515;
         padding-bottom: 7px;
         transition-timing-function: ease-in;
         transition: 0.2s;
@@ -330,10 +350,6 @@ nav a {
     }
 }
 
-@media screen and (min-width: 1344px) {
-    .intro { padding-top: 40px; }
-}
-
 .inner__content {
     max-width: 450px;
     margin: 0 auto;
@@ -352,7 +368,7 @@ nav a {
 
 @media screen and (min-width: 1344px) {
     .grid {
-        margin-bottom: 200px;
+        margin-bottom: 100px;
     }
 }
 
@@ -402,7 +418,7 @@ nav a {
 
 @media screen and (min-width: 1344px) {
     .grid__double-first  {
-        margin-right: 50px;
+        margin-right: 48px;
     }
 }
 
@@ -425,7 +441,7 @@ nav a {
 
 @media screen and (min-width: 1344px) {
     .grid__triple .grid__triple-first  {
-        margin-right: 48px;
+        margin-right: 46px;
     }
 }
 
@@ -471,7 +487,7 @@ nav a {
     line-height: 49px;
     letter-spacing: 1px;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 500;
     color: #FEF2E5;
     border-radius: 50px;
     transition-timing-function: ease-out;
@@ -489,18 +505,21 @@ nav a {
 
 @media screen and (min-width: 1304px) {
     .grid__item-thumb {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }
 
 .grid__item-tag {
-    color: #657284;
+    margin-bottom: 4px;
+    color: #4F5967;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 @media screen and (min-width: 1304px) {
     .grid__item-tag {
         font-size: 24px;
-        line-height: 36px;
+        line-height: 32px;
     }
 }
 
@@ -510,7 +529,7 @@ nav a {
 
 @media screen and (min-width: 1304px) {
     .grid {
-        margin-bottom: 200px;
+        margin-bottom: 100px
     }
 }
 
@@ -520,8 +539,8 @@ nav a {
 
 .about {
     padding: 50px 0;
-    background: #FEF2E5;
-    color: #794256;
+    color: #121418;
+    border-top: 1px solid #DCE0E5;
 }
 
 @media screen and (min-width: 1304px) {
@@ -548,7 +567,7 @@ nav a {
 
 .about__headline {
     margin-bottom: 20px;
-    color: #794256;
+    color: #121418;
     font-size: 22px;
     line-height: 33px;
 }
@@ -558,6 +577,7 @@ nav a {
         float: left;
         width: 280px;
         font-size: 34px;
+        font-weight: 500;
         line-height: 51px;
     }
 }
@@ -603,6 +623,32 @@ nav a {
 
 .about__ul-last-mobile { margin-bottom: 0; }
 
+.pills {
+    padding: 0;
+    list-style: none;
+}
+
+.pills__pill {
+    float: left;
+    margin: 0 8px 8px 0;
+    padding: 12px 16px;
+    border-radius: 500px;
+    background: #FAD0D0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #6C1515;
+}
+
+.contact__link {
+    color: #0034EA;
+    text-decoration: underline;
+}
+
+.contact__link:hover {
+    text-decoration: none;
+}
+
 .experience__item {
     display: block;
     overflow: hidden;
@@ -639,7 +685,6 @@ nav a {
 
 
 .experience__headline {
-    font-family: 'Karla', sans-serif;
     color: #794256;
 }
 
