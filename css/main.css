@@ -305,19 +305,17 @@ nav a {
 
 @media screen and (min-width: 1344px) {
     nav a:hover {
-        color: #6C1515;
-        border-bottom: 3px solid #6C1515;
+        color: #000;
+        border-bottom: 3px solid #000;
         padding-bottom: 7px;
         transition-timing-function: ease-in;
         transition: 0.2s;
     }
 }
 
-.footer__nav a { color: #794256; }
-
 @media screen and (min-width: 1344px) {
     .footer__nav a:hover {
-        border-bottom: 3px solid #794256;
+        border-bottom: 3px solid #000;
         padding-bottom: 5px;
         transition-timing-function: ease-in;
         transition: 0.1s;
@@ -377,7 +375,9 @@ nav a {
     margin-bottom: 50px;
 }
 
-.grid__item:hover h2 { color: #794256; }
+.grid__item:hover h2 {
+    text-decoration: underline;
+}
 
 .grid__item-thumb img {
     transition-timing-function: ease-out;
@@ -467,9 +467,15 @@ nav a {
 .grid__item-thumb {
     position: relative;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     color: #657284;
     border-radius: 2px;
+}
+
+@media screen and (min-width: 1304px) {
+    .grid__item-thumb {
+        margin-bottom: 24px;
+    }
 }
 
 .grid__item-btn {
@@ -501,12 +507,6 @@ nav a {
     opacity: 1;
     transition-timing-function: ease-in;
     transition: 0.2s;
-}
-
-@media screen and (min-width: 1304px) {
-    .grid__item-thumb {
-        margin-bottom: 20px;
-    }
 }
 
 .grid__item-tag {
@@ -588,7 +588,7 @@ nav a {
     .about__content {
         float: left;
         width: 816px;
-        padding-top: 12px;
+        padding-top: 11px;
     }
 }
 @media screen and (min-width: 1304px) {
@@ -631,7 +631,7 @@ nav a {
 .pills__pill {
     float: left;
     margin: 0 8px 8px 0;
-    padding: 12px 16px;
+    padding: 10px 16px;
     border-radius: 500px;
     background: #FAD0D0;
     font-size: 16px;
@@ -698,7 +698,7 @@ nav a {
 
 footer {
     padding: 60px 0 50px;
-    background: #D19AAE;
+    background: #F1F1F1;
     color: #fff;
 }
 
@@ -715,7 +715,7 @@ footer {
 .casestudy {}
 
 .casestudy__description {
-    color: #657284;
+    color: #121418;
 }
 
 @media screen and (min-width: 1304px) {
@@ -729,6 +729,12 @@ footer {
     width: auto;
     margin-bottom: 50px;
     text-align: left;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
 }
 
 @media screen and (min-width: 1304px) {
@@ -739,7 +745,7 @@ footer {
 
 .casestudy__caption {
     margin-top: 15px;
-    color: #657284;
+    color: #4F5967;
 }
 
 @media screen and (min-width: 1304px) {
@@ -771,11 +777,8 @@ footer {
     display: block;
     overflow: hidden;
     height: 60px;
+    margin: 0 67px;
 }
-
-
-
-
 
  /* ==========================================================================
    Helper classes
