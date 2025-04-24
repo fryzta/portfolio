@@ -149,12 +149,17 @@ li {
 img {
     width: 100%;
     border-radius: 4px;
-    background: #F1F1F1;
+    /*background: #F1F1F1;*/
 }
 
 .intro__text {
     float: left;
     margin-bottom: 160px;
+}
+
+.intro__text h1 {
+    margin-bottom: 16px;
+    padding-top: 8px;
 }
 
 .intro__text-preamble {
@@ -164,7 +169,7 @@ img {
 }
 
 h1 {
-    margin-bottom: 16px;
+    margin: 8px;
     color: #000;
     font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
@@ -179,7 +184,7 @@ h1 {
 
 @media screen and (min-width: 1344px) {
     h1 {
-        margin: 16px 0;
+        margin: 8px 0;
         text-align: left;
         font-size: 60px;
         line-height: 70px;
@@ -714,12 +719,29 @@ footer {
 
 .casestudy {}
 
+.casestudy__topcontainer {
+    overflow: hidden;
+}
+
 .casestudy__description {
+    float: left;
     color: #121418;
+}
+
+.casestudy__topcontainer .pills__pill {
+    float: right !important;
+    margin: 0;
+}
+
+.pills__pill-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 4px;
 }
 
 @media screen and (min-width: 1304px) {
     .casestudy__description {
+        padding-top: 4px;
         font-size: 24px;
         line-height: 36px;
     }
@@ -770,7 +792,7 @@ footer {
 }
 
 .casestudy__shadow {
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .casestudy__buttongroup {
