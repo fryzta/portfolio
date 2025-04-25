@@ -404,8 +404,12 @@ nav a {
     }
 }
 
-.grid__double {
+.grid__double, .grid__triple {
+    display: flex;
+}
 
+.grid__triple-skeuo {
+    display: block;
 }
 
 @media screen and (min-width: 1344px) {
@@ -427,15 +431,12 @@ nav a {
     }
 }
 
-.grid__triple {
-
-}
-
 @media screen and (min-width: 1344px) {
     .grid__triple {
         margin-bottom: 100px;
     }
 }
+
 
 @media screen and (min-width: 1344px) {
     .grid__triple .grid__item {
