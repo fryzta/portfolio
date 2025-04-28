@@ -154,22 +154,41 @@ img {
 
 .intro__text {
     float: left;
-    margin-bottom: 160px;
+    margin-bottom: 56px;
+}
+
+@media screen and (min-width: 1344px) {
+    .intro__text  {
+        margin-bottom: 160px;
+        padding-top: 8px;
+    }
 }
 
 .intro__text h1 {
-    margin-bottom: 16px;
-    padding-top: 8px;
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1344px) {
+    .intro__text h1  {
+        margin-bottom: 16px;
+        padding-top: 8px;
+    }
 }
 
 .intro__text-preamble {
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 20px;
+    line-height: 27px;
     color: #121418;
 }
 
+@media screen and (min-width: 1344px) {
+    .intro__text-preamble {
+        font-size: 32px;
+        line-height: 45px;
+    }
+}
+
 h1 {
-    margin: 8px;
     color: #000;
     font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
@@ -177,15 +196,14 @@ h1 {
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
 }
 
 @media screen and (min-width: 1344px) {
     h1 {
         margin: 8px 0;
-        text-align: left;
         font-size: 60px;
         line-height: 70px;
     }
@@ -198,9 +216,9 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 29px;
 }
 
 @media screen and (min-width: 1344px) {
@@ -213,7 +231,7 @@ h2 {
 header {
     display: block;
     overflow: hidden;
-    margin: 50px 0 50px;
+    margin: 48px 0 48px;
 }
 
 @media screen and (min-width: 1344px) {
@@ -223,15 +241,14 @@ header {
 }
 
 .avatar {
+    float: left;
     display: block;
     width: 90px;
-    margin: 0 auto 30px;
     background: none;
 }
 
 @media screen and (min-width: 1344px) {
     .avatar {
-        float: left;
         width: 154px;
         margin: 6px 48px 0 0;
     }
@@ -239,15 +256,18 @@ header {
 
 
 .logo {
+    float: left;
     display: block;
-    width: 33px;
-    margin: 0 auto 30px auto;
+    width: 20px;
+    padding-top: 9px;
     background: none;
 }
 
 @media screen and (min-width: 1344px) {
     .logo {
-        float: left;
+        padding: 0;
+        margin: 0 auto 30px auto;
+        width: 33px;
     }
 }
 
@@ -267,7 +287,8 @@ header {
 }
 
 nav {
-    width: 137px;
+    float: right;
+    width: auto;
     margin: 0 auto;
     font-size: 16px;
     line-height: 24px;
@@ -275,8 +296,6 @@ nav {
 
 @media screen and (min-width: 1344px) {
     nav {
-        float: right;
-        width: auto;
         font-size: 24px;
         line-height: 36px;
     }
@@ -327,7 +346,7 @@ nav a {
     }
 }
 
-.nav__first { margin-right: 30px; }
+.nav__first { margin-right: 24px; }
 
 @media screen and (min-width: 1344px) {
     .nav__first {
@@ -344,7 +363,7 @@ nav a {
     overflow: hidden;
     max-width: 450px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 32px;
 }
 
 @media screen and (min-width: 1344px) {
@@ -356,12 +375,13 @@ nav a {
 .inner__content {
     max-width: 450px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 32px;
 }
 
 @media screen and (min-width: 1344px) {
     .inner__content {
         max-width: 1304px;
+        padding: 0;
     }
 }
 
@@ -377,7 +397,13 @@ nav a {
 
 .grid__item {
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1344px) {
+    .grid__item {
+        margin: 0;
+    }
 }
 
 .grid__item:hover h2 {
@@ -398,14 +424,15 @@ nav a {
     transform: scale(1.05);
 }
 
-@media screen and (min-width: 1344px) {
-    .grid__item {
-        margin: 0;
-    }
+.grid__double, .grid__triple {
+    
 }
 
-.grid__double, .grid__triple {
-    display: flex;
+@media screen and (min-width: 1344px) {
+    .grid__double, .grid__triple {
+        margin-bottom: 100px;
+        display: flex;
+    }
 }
 
 .grid__triple-skeuo {
@@ -485,26 +512,38 @@ nav a {
 }
 
 .grid__item-btn {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -106px;
+    margin-left: -88px;
     margin-top: -5px;
-    height: 50px;
-    padding: 0 24px;
+    height: 40px;
+    padding: 0 18px;
     opacity: 0;
     text-transform: uppercase;
     background: #222A36;
     background: linear-gradient(0deg, rgba(34,42,54,1) 0%, rgba(65,79,100,1) 100%);
-    line-height: 49px;
+    line-height: 40px;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     color: #FEF2E5;
     border-radius: 50px;
     transition-timing-function: ease-out;
     transition: 0.3s;
     box-shadow: 0 4px 7px rgba(0,0,0,0.3), inset 0 -3px 0 #0B1018;
+}
+
+@media screen and (min-width: 1304px) {
+    .grid__item-btn {
+        top: 50%;
+        margin-left: -106px;
+        padding: 0 24px;
+        height: 50px;
+        font-size: 15px;
+        line-height: 49px;
+    }
 }
 
 .grid__item:hover .grid__item-btn {
@@ -516,21 +555,21 @@ nav a {
 }
 
 .grid__item-tag {
-    margin-bottom: 4px;
     color: #4F5967;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 @media screen and (min-width: 1304px) {
     .grid__item-tag {
+        margin-bottom: 4px;
         font-size: 24px;
         line-height: 32px;
     }
 }
 
 .grid {
-    margin-bottom: 100px;
+    margin-bottom: 48px;
 }
 
 @media screen and (min-width: 1304px) {
@@ -544,7 +583,7 @@ nav a {
  */
 
 .about {
-    padding: 50px 0;
+    padding: 48px 0;
     color: #121418;
     border-top: 1px solid #DCE0E5;
 }
@@ -560,7 +599,7 @@ nav a {
 .about__section {
     display: block;
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 
 @media screen and (min-width: 1304px) {
@@ -572,10 +611,11 @@ nav a {
 .about__section-last { margin-bottom: 0; }
 
 .about__headline {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     color: #121418;
     font-size: 22px;
-    line-height: 33px;
+    font-weight: 500;
+    line-height: 29px;
 }
 
 @media screen and (min-width: 1304px) {
@@ -588,7 +628,10 @@ nav a {
     }
 }
 
-.about__content {}
+.about__content {
+    display: block;
+    overflow: hidden;
+}
 
 @media screen and (min-width: 1304px) {
     .about__content {
@@ -636,14 +679,22 @@ nav a {
 
 .pills__pill {
     float: left;
-    margin: 0 8px 8px 0;
-    padding: 10px 16px;
+    margin: 0 4px 8px 0;
+    padding: 8px 14px;
     border-radius: 500px;
     background: #FAD0D0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 23px;
     color: #6C1515;
+}
+
+@media screen and (min-width: 1304px) {
+    .pills__pill {
+        margin: 0 8px 8px 0;
+        padding: 10px 16px;
+        font-size: 16px;
+    }
 }
 
 .contact__link {
