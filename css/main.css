@@ -98,14 +98,14 @@ p { margin: 0; }
 
 .btn {
     display: inline-block;
-    height: 50px;
-    padding: 0 24px;
+    height: 40px;
+    padding: 0 18px;
     text-transform: uppercase;
     background: #222A36;
     background: linear-gradient(0deg, rgba(34,42,54,1) 0%, rgba(65,79,100,1) 100%);
-    line-height: 49px;
+    line-height: 40px;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     color: #FEF2E5;
     border-radius: 50px;
@@ -113,6 +113,39 @@ p { margin: 0; }
     transition-timing-function: ease-out;
     transition: 0.3s;
 }
+
+@media screen and (min-width: 1344px) {
+    .btn {
+        height: 50px;
+        padding: 0 24px;
+        line-height: 50px;
+        font-size: 15px;
+    }
+}
+
+/*.grid__item-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -88px;
+    margin-top: -5px;
+    height: 40px;
+    padding: 0 18px;
+    opacity: 0;
+    text-transform: uppercase;
+    background: #222A36;
+    background: linear-gradient(0deg, rgba(34,42,54,1) 0%, rgba(65,79,100,1) 100%);
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FEF2E5;
+    border-radius: 50px;
+    transition-timing-function: ease-out;
+    transition: 0.3s;
+    box-shadow: 0 4px 7px rgba(0,0,0,0.3), inset 0 -3px 0 #0B1018;
+}*/
 
 .btn:hover {
     background: linear-gradient(0deg, rgba(58,68,82,1) 0%, rgba(101,115,136,1) 100%);
@@ -148,8 +181,14 @@ li {
 
 img {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 2px;
     /*background: #F1F1F1;*/
+}
+
+@media screen and (min-width: 1344px) {
+    img {
+        border-radius: 4px;
+    }
 }
 
 .intro__text {
@@ -272,17 +311,19 @@ header {
 }
 
 .footer__logo {
+    margin: 0 24px 0 auto;
+    padding-top: 7px;
+    float: left;
     display: block;
-    width: 33px;
-    margin: 0 auto 30px auto;
+    width: 24px;
     background: none;
 }
 
 @media screen and (min-width: 1344px) {
     .footer__logo {
-        float: left;
-        margin-right: 70px;
-        margin: 0 70px 0 0;
+        margin-right: 48px;
+        padding: 0;
+        width: 33px;
     }
 }
 
@@ -302,7 +343,7 @@ nav {
 }
 
 .footer__nav {
-    width: 243px;
+    float: left;
     margin: 0 auto;
     font-size: 16px;
     line-height: 24px;
@@ -310,8 +351,6 @@ nav {
 
 @media screen and (min-width: 1344px) {
     .footer__nav {
-        float: left;
-        width: auto;
         height: 54px;
         font-size: 24px;
         line-height: 36px;
@@ -502,7 +541,7 @@ nav a {
     overflow: hidden;
     margin-bottom: 18px;
     color: #657284;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 @media screen and (min-width: 1304px) {
@@ -754,22 +793,20 @@ nav a {
  */
 
 footer {
-    padding: 60px 0 50px;
+    padding: 30px 0;
     background: #F1F1F1;
     color: #fff;
 }
 
 @media screen and (min-width: 1304px) {
     footer {
-        padding: 100px 0;
+        padding: 100px 0 90px;
     }
 }
 
 /*
  * Case studies
  */
-
-.casestudy {}
 
 .casestudy__topcontainer {
     overflow: hidden;
@@ -781,25 +818,47 @@ footer {
 }
 
 .casestudy__topcontainer .pills__pill {
-    float: right !important;
+    float: left;
     margin: 0;
 }
 
+@media screen and (min-width: 1304px) {
+    .casestudy__topcontainer .pills__pill {
+        float: right !important;
+    }
+}
+
 .pills__pill-icon {
-    height: 24px;
-    width: 24px;
+    height: 16px;
+    width: 16px;
     margin-right: 4px;
+    margin: -2px 4px 0 0;
+}
+
+@media screen and (min-width: 1304px) {
+    .pills__pill-icon {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.casestudy__description {
+    margin-bottom: 8px;
+    width: 100%;
 }
 
 @media screen and (min-width: 1304px) {
     .casestudy__description {
+        margin: 0;
         padding-top: 4px;
+        width: auto;
         font-size: 24px;
         line-height: 36px;
     }
 }
 
 .casestudy__headline {
+    margin-top: 16px;
     width: auto;
     margin-bottom: 50px;
     text-align: left;
@@ -851,7 +910,17 @@ footer {
     display: block;
     overflow: hidden;
     height: 60px;
-    margin: 0 67px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1304px) {
+    .casestudy__buttongroup {
+        display: block;
+        overflow: hidden;
+        width: auto;
+        height: 60px;
+        margin: 0 67px;
+    }
 }
 
  /* ==========================================================================
