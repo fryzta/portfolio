@@ -199,7 +199,6 @@ img {
 @media screen and (min-width: 1344px) {
     .intro__text  {
         margin-bottom: 160px;
-        padding-top: 8px;
     }
 }
 
@@ -523,9 +522,6 @@ nav a {
     }
 }
 
-.grid__single {
-}
-
 @media screen and (min-width: 1304px) {
     .grid__single {
         margin-bottom: 100px;
@@ -551,7 +547,6 @@ nav a {
 }
 
 .grid__item-btn {
-    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
