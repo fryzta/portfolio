@@ -114,7 +114,7 @@ p { margin: 0; }
     transition: 0.3s;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .btn {
         height: 50px;
         padding: 0 24px;
@@ -162,7 +162,7 @@ ul {
     padding-left: 20px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     ul {
         margin-bottom: 50px;
     }
@@ -173,7 +173,7 @@ li {
     line-height: 24px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     li {
         line-height: 36px;
     }
@@ -185,7 +185,7 @@ img {
     /*background: #F1F1F1;*/
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     img {
         border-radius: 4px;
     }
@@ -196,7 +196,7 @@ img {
     margin-bottom: 56px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .intro__text  {
         margin-bottom: 160px;
     }
@@ -206,7 +206,7 @@ img {
     margin-bottom: 8px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .intro__text h1  {
         margin-bottom: 16px;
         padding-top: 8px;
@@ -219,7 +219,7 @@ img {
     color: #121418;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .intro__text-preamble {
         font-size: 32px;
         line-height: 45px;
@@ -239,7 +239,7 @@ h1 {
     text-align: left;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     h1 {
         margin: 8px 0;
         font-size: 60px;
@@ -259,7 +259,7 @@ h2 {
     line-height: 29px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     h2 {
         font-size: 32px;
         line-height: 40px;
@@ -272,7 +272,7 @@ header {
     margin: 48px 0 48px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     header {
         margin: 130px 0;
     }
@@ -285,7 +285,7 @@ header {
     background: none;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .avatar {
         width: 154px;
         margin: 6px 48px 0 0;
@@ -301,7 +301,7 @@ header {
     background: none;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .logo {
         padding: 0;
         margin: 0 auto 30px auto;
@@ -318,7 +318,7 @@ header {
     background: none;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .footer__logo {
         margin-right: 48px;
         padding: 0;
@@ -334,7 +334,7 @@ nav {
     line-height: 24px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     nav {
         font-size: 24px;
         line-height: 36px;
@@ -348,7 +348,7 @@ nav {
     line-height: 24px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .footer__nav {
         height: 54px;
         font-size: 24px;
@@ -365,7 +365,7 @@ nav a {
     text-decoration: none;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     nav a:hover {
         color: #000;
         border-bottom: 3px solid #000;
@@ -375,7 +375,7 @@ nav a {
     }
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .footer__nav a:hover {
         border-bottom: 3px solid #000;
         padding-bottom: 5px;
@@ -386,7 +386,7 @@ nav a {
 
 .nav__first { margin-right: 24px; }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .nav__first {
         margin-right: 40px;
     }
@@ -404,7 +404,7 @@ nav a {
     padding: 0 32px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .inner {
         max-width: 1170px;
     }
@@ -416,10 +416,9 @@ nav a {
     padding: 0 32px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .inner__content {
-        max-width: 1304px;
-        padding: 0;
+        max-width: 1170px;
     }
 }
 
@@ -427,7 +426,7 @@ nav a {
     margin-bottom: 100px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .grid {
         margin-bottom: 100px;
     }
@@ -438,7 +437,7 @@ nav a {
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .grid__item {
         margin: 0;
     }
@@ -466,7 +465,7 @@ nav a {
     
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .grid__double, .grid__triple {
         margin-bottom: 100px;
         display: flex;
@@ -477,52 +476,52 @@ nav a {
     display: block;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .grid__double {
         margin-bottom: 100px;
     }
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .grid__double .grid__item {
         display: inline-block;
         max-width: 625px;
     }
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .grid__double-first  {
         margin-right: 48px;
     }
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .grid__triple {
         margin-bottom: 100px;
     }
 }
 
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .grid__triple .grid__item {
         display: inline-block;
         max-width: 400px;
     }
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .grid__triple .grid__triple-first  {
         margin-right: 46px;
     }
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 900px) {
     .grid__triple-row  {
         margin-bottom: 50px;
     }
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .grid__single {
         margin-bottom: 100px;
     }
@@ -540,7 +539,7 @@ nav a {
     border-radius: 4px;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .grid__item-thumb {
         margin-bottom: 24px;
     }
@@ -569,7 +568,7 @@ nav a {
     box-shadow: 0 4px 7px rgba(0,0,0,0.3), inset 0 -3px 0 #0B1018;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .grid__item-btn {
         top: 50%;
         margin-left: -106px;
@@ -594,7 +593,7 @@ nav a {
     line-height: 24px;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .grid__item-tag {
         margin-bottom: 4px;
         font-size: 24px;
@@ -606,7 +605,7 @@ nav a {
     margin-bottom: 48px;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .grid {
         margin-bottom: 100px
     }
@@ -622,7 +621,7 @@ nav a {
     border-top: 1px solid #DCE0E5;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .about {
         padding: 100px 0;
         font-size: 24px;
@@ -636,7 +635,7 @@ nav a {
     margin-bottom: 48px;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .about__section {
         margin-bottom: 100px;
     }
@@ -652,7 +651,7 @@ nav a {
     line-height: 29px;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .about__headline {
         float: left;
         width: 280px;
@@ -667,25 +666,25 @@ nav a {
     overflow: hidden;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .about__content {
         float: left;
         width: 816px;
         padding-top: 11px;
     }
 }
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .about__content-row {
         float: left;
         width: 816px;
     }
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .about__content-row-first { margin-right: 40px; }
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .about__content-row-item {
         float: left;
         width: 408px;
@@ -694,13 +693,13 @@ nav a {
 
 .about__ul { margin-top: 10px; }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .about__ul {
         margin-top: 20px;
     }
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .about__ul-last { margin-bottom: 0; }
 }
 
@@ -723,7 +722,7 @@ nav a {
     color: #6C1515;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .pills__pill {
         margin: 0 8px 8px 0;
         padding: 10px 16px;
@@ -761,7 +760,7 @@ nav a {
     box-shadow: 0 1px 2px rgba(0,0,0,0.16);
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .experience__item-img {
         margin: 5px 20px 0 0;
     }
@@ -793,7 +792,7 @@ footer {
     color: #fff;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     footer {
         padding: 100px 0 90px;
     }
@@ -817,7 +816,7 @@ footer {
     margin: 0;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .casestudy__topcontainer .pills__pill {
         float: right !important;
     }
@@ -830,7 +829,7 @@ footer {
     margin: -2px 4px 0 0;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .pills__pill-icon {
         height: 24px;
         width: 24px;
@@ -842,7 +841,7 @@ footer {
     width: 100%;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .casestudy__description {
         margin: 0;
         padding-top: 4px;
@@ -865,7 +864,7 @@ footer {
     "wdth" 100;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .casestudy__headline {
         margin-bottom: 100px;
     }
@@ -876,7 +875,7 @@ footer {
     color: #4F5967;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .casestudy__caption {
         font-size: 20px;
         line-height: 30px;
@@ -888,7 +887,7 @@ footer {
     margin-bottom: 50px;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .casestudy__paragraph {
         width: 816px;
         margin: 0 auto 100px;
@@ -908,7 +907,7 @@ footer {
     width: 100%;
 }
 
-@media screen and (min-width: 1304px) {
+@media screen and (min-width: 900px) {
     .casestudy__buttongroup {
         display: block;
         overflow: hidden;
