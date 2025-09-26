@@ -50,9 +50,20 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    
     margin: 1em 0;
     padding: 0;
+}
+
+.hline {
+    border-top: 1px solid #DCE0E5;
+    margin-bottom: 48px;
+}
+
+@media screen and (min-width: 900px) {
+    .hline {
+        margin-bottom: 100px;
+    }
 }
 
 /*
@@ -887,6 +898,10 @@ footer {
     margin-bottom: 50px;
 }
 
+.casestudy__role {
+    margin-bottom: 30px;
+}
+
 @media screen and (min-width: 900px) {
     .casestudy__paragraph {
         width: 816px;
@@ -894,6 +909,23 @@ footer {
         font-size: 24px;
         line-height: 40px;
     }
+}
+
+@media screen and (min-width: 900px) {
+    .casestudy__role {
+        width: 816px;
+        margin: 0 auto 50px;
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+.casestudy__role-headline {
+    margin-bottom: 18px;
+}
+
+.casestudy__role-items {
+    /*color: #4F5967;*/
 }
 
 .casestudy__shadow {
